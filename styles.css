@@ -1,0 +1,207 @@
+/* ----- Global Styles ----- */
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* Powder blue background for the entire page */
+    background-color: #B0E0E6; /* powderblue */
+    /* Default text color (for "rest of text" = midnight blue) */
+    color: #191970; /* midnight blue */
+}
+
+/* Make all headers (except the H1 in the header box) teal */
+h2, h3{
+    font-weight: bold;
+    font-family: Serif, sans-serif;
+    text-transform: uppercase;
+    color: #025d83; /* teal */
+}
+h4, h5, h6 {
+    font-weight: bold;
+    font-family: Serif, sans-serif;
+    color: #025d83; /* teal */
+}
+
+/* ----- Header Section ----- */
+#header {
+    /* Teal gradient background */
+    
+    background: linear-gradient(to right, #0b69a0, #61c2e9);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 50px;
+}
+
+/* H1 and the first paragraph in white text */
+#header h1{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: Serif, sans-serif;
+    color: #FFFFFF; /* white text */
+    margin: 0; 
+    margin-bottom: 0.5em;
+}
+#header p {
+    text-align: left;
+    color: #FFFFFF; /* white text */
+    margin: 0; 
+
+}
+.short-hr {
+    border: none;              /* Remove default border */
+    width: 50px;               /* Adjust width as desired */
+    height: 2px;               /* Thickness of the line */
+    background-color: #B0E0E6; /* Powder blue */
+    margin: 8px 0;             /* Spacing above/below the line */
+  }
+
+/* ----- Main Content Section ----- */
+#main-content {
+    /* White box with rounded corners */
+    background-color: #FFFFFF;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+ul {
+    /* Add some left padding so bullets are clearly visible */
+    padding-left: 2em;
+  }
+  
+  /* More space between list items */
+  ul li {
+    margin-bottom: 0.5em; 
+  }
+  
+  /* Make the bullet points sky blue */
+  ul li::marker {
+    color: #87CEEB; /* skyblue */
+  }
+  
+  /* Ordered Lists (OL) - optional if you also want numbered lists spaced */
+  ol {
+    padding-left: 2em;
+  }
+  
+  ol li {
+    margin-bottom: 0.5em;
+  }
+
+/* ----- Quiz Section (Inside Main Content) ----- */
+
+
+/* --- Octopus Quiz Section --- */
+#quiz-section {
+    /* Skyblue box with rounded corners */
+    background-color: #87CEEB; /* skyblue */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Header for the quiz (above image) */
+#quiz-section h2 {
+    margin-top: 0;
+    color: #191970; /* midnight blue or whichever color you prefer for headings */
+}
+
+/* Container to hold image on the left, form on the right */
+.quiz-container {
+    display: flex;
+    align-items: flex-start; /* image and form top-align */
+    margin-top: 20px;
+}
+
+/* Octopus image with purple border */
+.quiz-container img {
+    border: 2px solid purple;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Form styles */
+.quiz-container form {
+    margin-left: auto;       /* Push form to the far right */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make labels midnight blue to match the rest of text */
+.quiz-container form label {
+    text-align: left;
+    color: #191970;  /* midnight blue */
+    margin-bottom: 5px;
+    font-weight: bold; 
+    margin-left: auto;       /* Push form to the far right */
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Teal submit button with rounded corners */
+.quiz-container form input[type="submit"] {
+    background-color: #008080;  /* teal */
+    color: #ffffff;             /* white text */
+               /* bold */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* ----- Species Table ----- */
+#species-table {
+    margin: 20px;
+}
+
+/* Make table full-width (optional) and collapse borders for a cleaner look */
+#species-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Top row (header) -> light gray background, white bold text */
+#species-table tr:first-child {
+    background-color: #8d8a8a; /* light gray */
+    color: #FFFFFF;           /* white text */
+    font-weight: bold;
+}
+
+/* Second row -> powder blue background, midnight blue text */
+#species-table tr:nth-child(2) {
+    background-color: #B0E0E6; /* powder blue */
+    color: #191970;            /* midnight blue */
+}
+
+/* Third row -> white background, midnight blue text */
+#species-table tr:nth-child(3) {
+    background-color: #FFFFFF;
+    color: #191970; /* midnight blue */
+}
+
+/* Table cells */
+#species-table th,
+#species-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+/* ----- Footer ----- */
+#footer {
+    /* Teal gradient background with rounded corners */
+    background-color:#025d83; /* teal */
+    font-size: smaller;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#footer p {
+    color: #FFFFFF; /* white text */
+    margin: 0;
+}
